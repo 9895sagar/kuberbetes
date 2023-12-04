@@ -10,3 +10,20 @@ To delete pod and deployment or resources in particular deployment
 --- kubectl delete all
 --- kubectl delete all -a
 
+To create deployments
+--- kubectl create -f deployment.yml
+--- kubectl apply -f deployment.yml
+
+To check deployments
+--- kubectl get deployment
+--- kubectl get pod
+--- kubectl get rs
+
+To check termination and creations of pod
+- In first terminal
+--- kubectl delete pod < pod_name>
+
+- In second terminal
+--- kubectl get pods -w
+
+
