@@ -1,0 +1,12 @@
+To get pod and deployment or resources in particular deployment
+--- kubectl get pod 
+--- kubectl get deploymente
+--- kubectl get all
+--- kubectl get all -a
+
+To delete pod and deployment or resources in particular deployment
+--- kubectl delete pod 
+--- kubectl delete deployment
+--- kubectl delete all
+--- kubectl delete all -a
+
