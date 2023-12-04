@@ -1,0 +1,15 @@
+Equivalent command for power creation in Docker
+--- docker run -d nginx 1.14.2 --name nginx -p 80:80
+
+Command for pod creation
+--- kubectl create -f pod.yml
+
+Pod Entire details
+--- kubectl get pods
+--- kubectl get pods -o wide
+
+Pod access by external ip address
+--- minikube ssh
+--- curl ip add
+
+
