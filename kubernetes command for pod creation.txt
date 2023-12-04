@@ -3,6 +3,7 @@ Equivalent command for power creation in Docker
 
 Command for pod creation
 --- kubectl create -f pod.yml
+--- kubectl apply -f pod.yml
 
 Pod Entire details
 --- kubectl get pods
@@ -11,5 +12,8 @@ Pod Entire details
 Pod access by external ip address
 --- minikube ssh
 --- curl ip add
+
+How to verify the applicatios
+--- kubectl logs pod nginx
 
 
