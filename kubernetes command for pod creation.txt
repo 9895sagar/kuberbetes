@@ -15,5 +15,10 @@ Pod access by external ip address
 
 How to verify the applicatios
 --- kubectl logs pod nginx
+--- kubectl describe pod nginx
+
+How to check the current status of pod
+--- kubectl logs nginx
+
 
 
