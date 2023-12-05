@@ -6,11 +6,20 @@ To debug and more about the Kybernetes Services
 --- kubectl get svc -v=9
 --- kubectl get svc
 
-To access the application using cluster ip address/ node ip address
+To access the application using cluster ip address/ node ip address or expsing the port
 --- minikube ssh
 --- curl http://ip-of-cluster:80/demo -L
 --- minikube ip
 --- curl -L http://ip-of-node:30007/demo
 
-To access the to outeside world
+To access the to service descovery
+--- If you provide any change in a code of the application or the service.yml then the service is not accessible
+
+To access the application using load balancer
+--- kubectl get pods
+--- curl http://pvt ip of cluser/node:30007/demo at 6-7times
+--- kubectl get pods
+--- kubectl get pods -o wide
+
+
 
