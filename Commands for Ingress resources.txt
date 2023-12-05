@@ -1,0 +1,8 @@
+First check the state of the service 
+--- kubectl get pods
+--- kubectl get deployments
+--- kubectl get svc
+
+To access the service by using node port or cluster port
+--- minikube ip
+--- curl -L http://minikube ip:30007/demo -v
