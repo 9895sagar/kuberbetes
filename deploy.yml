@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tech_mahindra
+  labels:
+    app: tech_mahindra
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tech_mahindra
+  template:
+    metadata:
+      labels:
+        app: tech_mahindra
+    spec:
+      containers:
+      - name: stepsstrong_app
+        image: tech_mahindra/tech_mahindra-stepsstrong:v1
+        ports:
+        - containerPort: 8000
