@@ -11,7 +11,7 @@ spec:
         path: "/bar"
         backend:
           service:
-            name: service1
+            name: python-django-sample-app
             port:
               number: 80
   - host: "*.foo.com"
@@ -21,7 +21,7 @@ spec:
         path: "/foo"
         backend:
           service:
-            name: service2
+            name: python-django-sample-app
             port:
               number: 80
 
