@@ -6,3 +6,32 @@ First check the state of the service
 To access the service by using node port or cluster port
 --- minikube ip
 --- curl -L http://minikube ip:30007/demo -v
+
+To create ingress resources
+--- kubectl create -f ingress.yml
+--- kubectl apply -f ingress.yml
+
+To check Ingress Controller installed or not
+--- kubectl get pod -A | grep nginx
+
+To install Nginx Ingress Controller on minikube cluster
+--- minikube addons enable ingress
+
+How to check Ingress resources
+--- kubectl get ingress 
+--- minikube ip
+--- curl -L http://foo.bar.com/bar -v
+
+Let us try to see the logs of Ingress resources
+--- kubectl logs ingress-nginx-controller-namespace -n
+
+When yor worked on local cluster then update the /etc/host configuration
+--- sudo vim /etc/hosts
+--- scrolled down upto end of section
+--- give the domain ingress ip add foo.bar.com 
+--- ping foo.bar.com
+
+
+
+
+
