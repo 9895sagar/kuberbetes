@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app.kubernetes.io/name: MyApp
+    app: tech_mahindra
   ports:
     - port: 80
       # By default and for convenience, the `targetPort` is set to
