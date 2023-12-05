@@ -1,1 +1,16 @@
+To create or apply the services
+--- kubectl apply -f nodeport_service.yml
+--- kubectl create -f nodeport_service.yml
+
+To debug and more about the Kybernetes Services
+--- kubectl get svc -v=9
+--- kubectl get svc
+
+To access the application using cluster ip address/ node ip address
+--- minikube ssh
+--- curl http://ip-of-cluster:80/demo -L
+--- minikube ip
+--- curl -L http://ip-of-node:30007/demo
+
+To access the to outeside world
 
